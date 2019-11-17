@@ -71,15 +71,54 @@ margin-top: 10%;
 #current-weather {
     padding: 1%;
     margin: 1%;
+    margin-bottom: 0%;
     border-right: 10% !important;
     width: 98%;
     height: 45%;
 }
 
-#city-temp {
-    margin-top: 1%;
+#city-name {
+    margin-left: 1%;
+    font-size: 25px;
+    margin-bottom: 2%;
+}
+
+.city-info {
     margin-left: 0.7%;
     color: rgb(59, 59, 59);
     font-size: 16px;
     font-weight: lighter;
+}
+
+
+#city-history {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.five-day-row {
+    position: fixed;
+    display: flex;
+    justify-content: flex-start;
+    align-self: flex-end;
+    align-items: space-between;
+    margin-left: 23%;
+    margin-top: 0%;
+    width: 74%;
+    height: 33%;
+}
+
+.five-day-forecast {
+    display: flex;
+    border-radius: 5%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+background-color: rgb(14, 14, 255);
+height: 93%;
+width: 50%;
+}
+
+.fdf {
+    color: white;
+    font-size: 16px;
 }

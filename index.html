@@ -20,7 +20,7 @@
             <h2>Weather Dashboard</h2>
 
         </div>
-        
+
 
         <div class="row ui-box">
 
@@ -40,6 +40,11 @@
                     </div>
                     <div class="card" id="search-history">
 
+                        <div id="city-history">
+                            <h3 class="city-history-text">
+
+                            </h3>
+                        </div>
 
                     </div>
 
@@ -50,10 +55,25 @@
             </div>
 
             <div class="card" id="current-weather">
+
                 <h1 id="city-name">
 
                 </h1>
-                <h1 id="city-temp">
+
+
+                <h1 class="city-info" id="city-temp">
+
+                </h1>
+
+                <h1 class="city-info" id="city-hum">
+
+                </h1>
+
+                <h1 class="city-info" id="wind-speed">
+
+                </h1>
+
+                <h1 class="city-info" id="uv-index">
 
                 </h1>
 
@@ -61,7 +81,43 @@
 
 
 
+            <div class="five-day-row">
+
+                <div class="five-day-forecast">
+                    <h3 id="fdf-1" class="fdf">
+                            
+                    </h3>
+                </div>
+
+                <div class="five-day-forecast">
+                    <h3 id="fdf-2" class="fdf">
+
+                    </h3>
+                </div>
+
+                <div class="five-day-forecast">
+                    <h3 id="fdf-3" class="fdf">
+
+                    </h3>
+                </div>
+
+                <div class="five-day-forecast">
+                    <h3 id="fdf-4" class="fdf">
+
+                    </h3>
+                </div>
+
+                <div class="five-day-forecast">
+                    <h3 id="fdf-5" class="fdf">
+
+                    </h3>
+                </div>
+
+
+            </div>
+
         </div>
+
 
     </div>
 
@@ -77,6 +133,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="./script.js"></script>
 </body>
 
