@@ -30,7 +30,7 @@ $(button).on("click", function () {
     localStorage.setItem("zip-history", zip);
     console.log(localStorage.getItem("zip-history"));
     // Constructing a URL to search Giphy for the name of the person who said the quote
-    var queryURL = "http://api.openweathermap.org/data/2.5/weather?zip=" + zip + "&units=imperial&APPID=8b56516a3d32f8be50c3c2b2e0638ee8";
+    var queryURL = "https://api.openweathermap.org/data/2.5/weather?zip=" + zip + "&units=imperial&APPID=8b56516a3d32f8be50c3c2b2e0638ee8";
 
     // Performing our AJAX GET request
     $.ajax({
@@ -76,7 +76,7 @@ function uvCall() {
     var latitude = latLong[0];
     var longitude = latLong[1];
 
-    var uvApi = "http://api.openweathermap.org/data/2.5/uvi?appid=8b56516a3d32f8be50c3c2b2e0638ee8&lat=" + latitude + "&lon=" + longitude;
+    var uvApi = "https://api.openweathermap.org/data/2.5/uvi?appid=8b56516a3d32f8be50c3c2b2e0638ee8&lat=" + latitude + "&lon=" + longitude;
 
     $.ajax({
         url: uvApi,
@@ -95,7 +95,7 @@ function fiveDay() {
 
     var zip = cityZip[0];
 
-    var fdApi = "http://api.openweathermap.org/data/2.5/forecast?zip=" + zip + "&units=imperial&APPID=8b56516a3d32f8be50c3c2b2e0638ee8";
+    var fdApi = "https://api.openweathermap.org/data/2.5/forecast?zip=" + zip + "&units=imperial&APPID=8b56516a3d32f8be50c3c2b2e0638ee8";
 
     $.ajax({
         url: fdApi,
@@ -152,7 +152,7 @@ function fiveDay() {
 $( document ).ready(function() {
     var zipHistory = localStorage.getItem("zip-history");
 if (localStorage.getItem("zip-history")) {
-    var queryURL = "http://api.openweathermap.org/data/2.5/weather?zip=" + zipHistory + "&units=imperial&APPID=8b56516a3d32f8be50c3c2b2e0638ee8";
+    var queryURL = "https://api.openweathermap.org/data/2.5/weather?zip=" + zipHistory + "&units=imperial&APPID=8b56516a3d32f8be50c3c2b2e0638ee8";
 
     // Performing our AJAX GET request
     $.ajax({
