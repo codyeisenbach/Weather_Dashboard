@@ -1,143 +1,145 @@
 .grey-bg {
-    position: fixed;
-    background-color: lightgrey;
-    width: 100%;
-    height: 100%;
+  background-color: lightgrey;
 }
 
 .form-group {
-    display: block;
-    margin: 5%;
+  display: block;
+  margin: 5%;
 }
 
 .btn {
-    font-size: 16px;
-    color: white;
+  font-size: 16px;
+  color: white;
 }
 
 #search-term {
-    display: flex;
-    align-items: end;
-    width: 80%;
+  display: flex;
+  align-items: end;
+  width: 80%;
 }
 
 .ui-box {
-    flex: none;
-display: flex;
-flex-wrap: nowrap !important;
-width: 100%;
-height: 80%;
-background-color: white;
-padding: 1% !important;
-padding-top: 0% !important;
-margin-left: 0% !important;
+  display: flex;
+
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  padding: 0%;
+  padding-top: 0% !important;
+  margin-left: 0% !important;
 }
 
 .grey-box {
-    margin: 1%;
-    margin-left: 0.1% !important;
-    margin-top: 0%;
-display: flex;
-flex-direction: row;
-border-left: 5%;
-height: 97%;
-background-color: rgb(240, 240, 240) !important;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 25%;
+  margin-right: 1%;
+  margin-top: 0%;
+  margin-left: 0%;
+  margin-bottom: 2%;
+  padding: 0%;
+  height: 100%;
+  background-color: rgb(240, 240, 240) !important;
 }
 
 .w-title {
-    display: flex;
-    justify-content: center;
-    position: sticky;
-    padding-right: 0% !important;
-    margin-left: 0% !important;
-    height: 75px;
-    width: 100%;
-    background-color: rgb(66, 66, 66);
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  padding-right: 0% !important;
+  margin-left: 0% !important;
+  height: 75px;
+  width: 100%;
+  background-color: rgb(66, 66, 66);
 }
 
 h2 {
-    padding-top: 1.5%;
-    color: white;
+  padding-top: 1.5%;
+  color: white;
+}
+
+.hidden {
+  display: none;
 }
 
 #search-history {
-    min-height: 75px;
-display: flex;
-height: auto;
-width: auto;
-margin-top: 10%;
+  min-height: 75px;
+  height: 100%;
+  width: auto;
 }
 
 #current-weather {
-    padding: 1%;
-    margin: 1%;
-    margin-bottom: 0%;
-    border-right: 10% !important;
-    width: 98%;
-    height: 45%;
+  display: flex;
+  align-self: center;
+  margin: 0%;
+  min-height: 180px;
+  padding: 1%;
+  width: 74%;
+  height: 45%;
 }
 
 #city-name {
-    margin-left: 1%;
-    font-size: 25px;
-    margin-bottom: 2%;
+  margin-left: 1%;
+  font-size: 25px;
+  margin-bottom: 2%;
+}
+
+.center {
+  text-align: center;
+}
+
+.container {
+  display: flex;
 }
 
 .city-info {
-    margin-left: 0.7%;
-    color: rgb(59, 59, 59);
-    font-size: 16px;
-    font-weight: lighter;
+  margin-left: 0.7%;
+  color: rgb(59, 59, 59);
+  font-size: 16px;
+  font-weight: lighter;
 }
 
-
 #city-history {
-    font-size: 20px;
-    font-weight: normal;
+  font-size: 20px;
+  font-weight: normal;
 }
 
 .five-day-row {
-    position: fixed;
-    display: flex;
-    justify-content: flex-start;
-    align-self: flex-end;
-    align-items: space-between;
-    margin-left: 23%;
-    margin-top: 0%;
-    width: 74%;
-    height: 27%;
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  width: 100%;
+  height: 27%;
 }
 
 .five-day-forecast {
-    padding: 1%;
-    border-radius: 5%;
-    margin-left: 5%;
-    margin-bottom: 5%;
-background-color: rgb(14, 14, 255);
-height: 93%;
-width: 50%;
+  margin: 2%;
+  border-radius: 2%;
+  margin-bottom: 0%;
+  background-color: rgb(10, 108, 255);
+  height: 175px;
+  width: 30%;
 }
 
 .fdf {
-    align-items: column;
-    color: white;
-    font-size: 16px;
+  margin: 4%;
+  color: white;
+  font-size: 16px;
 }
 
 .fdf-sub {
-    color: white;
-    font-size: 14px;
-    font-weight: lighter;
+  margin: 4%;
+  color: white;
+  font-size: 14px;
+  font-weight: lighter;
 }
 
 #fdf-title {
-    position:fixed;
-    display: flex;
-    color: black;
-    font-size: 38px;
-    justify-content: flex-start;
-    align-self: flex-end;
-    width: 100%;
-    height: 39%;
-    margin-left: 26.5%;
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-size: 38px;
+  width: 100%;
 }

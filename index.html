@@ -1,175 +1,133 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Title</title>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <link rel="stylesheet" href="style.css" />
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="grey-bg">
+      <div class="row w-title">
+        <h2>Weather Dashboard</h2>
+      </div>
 
-        <div class="row w-title">
-            <h2>Weather Dashboard</h2>
-
+      <div class="ui-box">
+        <div class="grey-box">
+          <div class="form-group">
+            <label for="search">Enter ZIP:</label>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <button
+                  class="btn btn-primary"
+                  type="button"
+                  id="button-addon1"
+                >
+                  <i class="fa fa-search"></i>
+                </button>
+              </div>
+              <input
+                type="text"
+                class="form-control"
+                placeholder=""
+                aria-label="Example text with button addon"
+                aria-describedby="button-addon1"
+              />
+            </div>
+            <div class="card list-group" id="search-history">
+              <div class="list-item center" id="city-history"></div>
+            </div>
+          </div>
         </div>
 
+        <div class="card container" id="current-weather">
+          <h1 id="city-name"></h1>
 
-        <div class="row ui-box">
+          <h1 class="city-info" id="city-temp"></h1>
 
+          <h1 class="city-info" id="city-hum"></h1>
 
-            <div class="grey-box col-3">
+          <h1 class="city-info" id="wind-speed"></h1>
 
-
-                <div class="form-group">
-                    <label for="search">Enter ZIP:</label>
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <button class="btn btn-primary" type="button" id="button-addon1"><i
-                                    class="fa fa-search"></i></button>
-                        </div>
-                        <input type="text" class="form-control" placeholder=""
-                            aria-label="Example text with button addon" aria-describedby="button-addon1">
-                    </div>
-                    <div class="card" id="search-history">
-
-                        <div id="city-history">
-                            <h3 class="city-history-text">
-
-                            </h3>
-                        </div>
-
-                    </div>
-
-
-
-                </div>
-
-            </div>
-
-            <div class="card" id="current-weather">
-
-                <h1 id="city-name">
-
-                </h1>
-
-
-
-                <h1 class="city-info" id="city-temp">
-
-                </h1>
-
-                <h1 class="city-info" id="city-hum">
-
-                </h1>
-
-                <h1 class="city-info" id="wind-speed">
-
-                </h1>
-
-                <h1 class="city-info" id="uv-index">
-
-                </h1>
-
-            </div>
-
-            <h1 id="fdf-title">
-                    5 Day Forecast:
-                </h1>
-
-            <div class="five-day-row">
-
-
-                <div class="five-day-forecast">
-                    <h3 id="fdf-1" class="fdf">
-
-                    </h3>
-                    <h3 id="fd-temp1" class="fdf-sub">
-
-                    </h3>
-                    <h3 id="fd-hum1" class="fdf-sub">
-
-                    </h3>
-                </div>
-
-                <div class="five-day-forecast">
-                    <h3 id="fdf-2" class="fdf">
-
-                    </h3>
-                    <h3 id="fd-temp2" class="fdf-sub">
-
-                    </h3>
-                    <h3 id="fd-hum2" class="fdf-sub">
-
-                    </h3>
-                </div>
-
-                <div class="five-day-forecast">
-                    <h3 id="fdf-3" class="fdf">
-
-                    </h3>
-                    <h3 id="fd-temp3" class="fdf-sub">
-
-                    </h3>
-                    <h3 id="fd-hum3" class="fdf-sub">
-
-                    </h3>
-                </div>
-
-                <div class="five-day-forecast">
-                    <h3 id="fdf-4" class="fdf">
-
-                    </h3>
-
-                    <h3 id="fd-temp4" class="fdf-sub">
-
-                    </h3>
-                    <h3 id="fd-hum4" class="fdf-sub">
-
-                    </h3>
-                </div>
-
-                <div class="five-day-forecast">
-                    <h3 id="fdf-5" class="fdf">
-
-                    </h3>
-                    <h3 id="fd-temp5" class="fdf-sub">
-
-                    </h3>
-                    <h3 id="fd-hum5" class="fdf-sub">
-
-                    </h3>
-                </div>
-
-
-            </div>
-
+          <h1 class="city-info" id="uv-index"></h1>
         </div>
 
+        
+        <div id="fdf-title">5 Day Forecast:</div>
+        <div class="five-day-row">
+        
+          <div class="five-day-forecast">
+            <h3 id="fdf-1" class="fdf"></h3>
+            <h3 id="fd-temp1" class="fdf-sub"></h3>
+            <h3 id="fd-hum1" class="fdf-sub"></h3>
+            <div id="fd-icon1"><img src="icons/unknown.png" /></div>
+          </div>
 
+          <div class="five-day-forecast">
+            <h3 id="fdf-2" class="fdf"></h3>
+            <h3 id="fd-temp2" class="fdf-sub"></h3>
+            <h3 id="fd-hum2" class="fdf-sub"></h3>
+            <div id="fd-icon2"><img src="icons/unknown.png" /></div>
+          </div>
+
+          <div class="five-day-forecast">
+            <h3 id="fdf-3" class="fdf"></h3>
+            <h3 id="fd-temp3" class="fdf-sub"></h3>
+            <h3 id="fd-hum3" class="fdf-sub"></h3>
+            <div id="fd-icon3"><img src="icons/unknown.png" /></div>
+          </div>
+
+          <div class="five-day-forecast">
+            <h3 id="fdf-4" class="fdf"></h3>
+            <h3 id="fd-temp4" class="fdf-sub"></h3>
+            <h3 id="fd-hum4" class="fdf-sub"></h3>
+            <div id="fd-icon4"><img src="icons/unknown.png" /></div>
+          </div>
+
+          <div class="five-day-forecast">
+            <h3 id="fdf-5" class="fdf"></h3>
+            <h3 id="fd-temp5" class="fdf-sub"></h3>
+            <h3 id="fd-hum5" class="fdf-sub"></h3>
+            <div id="fd-icon5"><img src="icons/unknown.png" /></div>
+          </div>
+        </div>
+      </div>
     </div>
-
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="./script.js"></script>
-</body>
-
+  </body>
 </html>
